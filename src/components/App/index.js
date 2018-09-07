@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import Intro from'../intro';
-
+import 'whatwg-fetch';
+import Series from '../../containers/index'
 
 class App extends Component {
 
-  state = {
-    series: [1, 2, 3]
-  }
+ 
   render() {
     return (
       <div className="App">
@@ -16,7 +15,7 @@ class App extends Component {
           <h1 className="App-title">Tv Series List</h1>
         </header>
         <Intro />
-        The length of array {this.state.series.length}
+       <Series />
       </div>
     );
   }
