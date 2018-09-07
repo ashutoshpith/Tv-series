@@ -9,7 +9,7 @@ class Series extends Component {
     
 
       onSeriesInputChange = e => {
-        fetch(`https://api.tvmaze.com/ical/countdown?token=kIa3am8AaTCSVnutAZ00_qgl5o1ln-H9&source=followed&filter=${e.target.value}`)
+        fetch(` http://api.tvmaze.com/search/shows?q=${e.target.value}`)
         .then(response => response.json())
         .then(json => this.setState({series: json}));
         
