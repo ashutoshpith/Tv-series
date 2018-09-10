@@ -14,7 +14,7 @@ class App extends Component {
          
           <h1 className="App-title">Tv Series List</h1>
         </header>
-        <Series/>
+        <Main/>
      
       </div>
     );
